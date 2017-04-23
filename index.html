@@ -31,7 +31,8 @@
 					<ul>
 						<li><a href="#one" class="active"><i class="fa fa-home" aria-hidden="true"></i>  About</a></li>
 						<li><a href="#two"><i class="fa fa-newspaper-o" aria-hidden="true"></i>  Published Software</a></li>
-						<li><a href="#three"><i class="fa fa-envelope" aria-hidden="true"></i>  Contact</a></li>
+						<li><a href="#three"><i class="fa fa-code" aria-hidden="true"></i>  Code Samples</a></li>
+						<li><a href="#four"><i class="fa fa-envelope" aria-hidden="true"></i>  Contact</a></li>
 					</ul>
 				</nav>
 				
@@ -101,10 +102,43 @@
 								</div>
 							</section>
 						
-						
+						<!-- code samples-->
+							<section id="three">
+								<div class="container">
+									<h3>Code Samples</h3>
+									<p>I often get asked for my github portfolio (with the assumption that like a social security number almost everyone automatically has one). I put very little of my code on public repositories as it's very easy for someone to slightly modify and app and publish it to the play store. However I thought I'd include some examples of beautifully written code, although I didn't write these.</p>
+									<h4>Java</h4>
+									<p>A simple subroutine to calculate the ordinal number for an integer (e.g. given 113 return 113th, etc).</p>
+									<pre><code>public static String ordinal(int i) {
+    String[] suffixes = new String[] { "th", "st", "nd", "rd", "th", "th", "th", "th", "th", "th" };
+    switch (i % 100) {
+    case 11:
+    case 12:
+    case 13:
+        return i + "th";
+    default:
+        return i + sufixes[i % 10];
+
+    }
+}</code></pre>
+									<h4>TPF Assembly</h4>
+									<p>Lots of people think assembly is quite tedious. I always found branching to a new label was annoying, and made the whole process of an if statement more complex. So what if I told you in some instances, in TPF assembly you could use regular if statements? Well yes you can!</p>
+									<pre><code>*instead of:
+TM EBW000,X'80'  Test bit 0 of first byte of work area
+BZ Label1
+
+*you can do
+#IF EBW000,BIT0,ON
+	*do what you want here
+#EIF
+</code></pre>
+									<p> I thought that was interesting at least. For more information <a href="https://www.ibm.com/support/knowledgecenter/SSB23S_1.1.0.14/bdfs1/mac_spm.html">go here</a>. 
+									</ul>
+								</div>
+							</section>						
 
 						<!--contact -->
-							<section id="three">
+							<section id="four">
 								<div class="container">
 									<h3>Contact Me</h3>
 									
@@ -113,6 +147,7 @@
 							
 								</div>
 							</section>
+						
 
 
 					<section id="footer">
