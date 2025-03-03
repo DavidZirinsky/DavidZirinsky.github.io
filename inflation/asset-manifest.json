@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/inflation/static/css/main.61686086.css",
-    "main.js": "/inflation/static/js/main.aea50b64.js",
+    "main.js": "/inflation/static/js/main.02a9a1fc.js",
     "static/js/787.a1b39df0.chunk.js": "/inflation/static/js/787.a1b39df0.chunk.js",
     "index.html": "/inflation/index.html",
     "main.61686086.css.map": "/inflation/static/css/main.61686086.css.map",
-    "main.aea50b64.js.map": "/inflation/static/js/main.aea50b64.js.map",
+    "main.02a9a1fc.js.map": "/inflation/static/js/main.02a9a1fc.js.map",
     "787.a1b39df0.chunk.js.map": "/inflation/static/js/787.a1b39df0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.61686086.css",
-    "static/js/main.aea50b64.js"
+    "static/js/main.02a9a1fc.js"
   ]
 }
